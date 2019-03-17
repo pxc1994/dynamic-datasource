@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.db.demo.mapper.ChannelMapper" >
+
+
+    <insert id="add" parameterType="com.db.demo.domain.ChannelVo">
+        insert into t_channel (channel,signkey) values (#{channel},#{signkey})
+    </insert>
+
+
+</mapper>
